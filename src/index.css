@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Fraunces", ui-serif, Georgia, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --color-cream: #fbf8f3;
+  --color-cream-deep: #f3ede2;
+  --color-sage: #7a9c87;
+  --color-sage-deep: #4f7a62;
+  --color-sage-soft: #e2ebdd;
+  --color-sky-soft: #dbe9f0;
+  --color-peach: #e8a87c;
+  --color-ink: #2b3a36;
+  --color-ink-soft: #54625d;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+  background-color: #fbf8f3;
+  color: #2b3a36;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-editorial {
+  font-family: "Fraunces", Georgia, serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.01em;
+}
+
+.prose-editorial p {
+  font-size: 1.075rem;
+  line-height: 1.85;
+  color: #3a4845;
+}
+
+.prose-editorial p + p {
+  margin-top: 1.25rem;
+}
+
+.drop-cap::first-letter {
+  font-family: "Fraunces", Georgia, serif;
+  float: left;
+  font-size: 4.25rem;
+  line-height: 0.9;
+  padding: 0.35rem 0.6rem 0 0;
+  color: #4f7a62;
+  font-weight: 500;
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, #d7c8b0 20%, #d7c8b0 80%, transparent);
+  height: 1px;
+}
